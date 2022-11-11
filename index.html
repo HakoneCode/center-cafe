@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Center Cafe</title>
+  <meta name="description" content="日々の中でホッとできるひとときを">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet"> <!-- Noto sans(源ノ角ゴシック)に変更するかも-->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="page-header wrapper">
+    <h1><a href="index.html"><img class="logo" src="img/logo.png" alt="Center Cafe"></a></h1>
+    <nav>
+      <ul class="main-nav">
+        <li><i class="bi bi-house-fill"></i><a href="index.html"> HOME</a></li>
+        <li><i class="bi bi-cup-fill"></i><a href="cafe.html"> CAFE</a></li>
+        <li><i class="bi bi-book-fill"></i><a href="menu.html"> MENU</a></li>
+        <li><i class="bi bi-cart-fill"></i><a href="shop.html"> SHOP</a></li>
+        <li><i class="bi bi-megaphone-fill"></i><a href="blog.html"> BLOG</a></li>
+      </ul>
+    </nav>
+
+    <div class="sp-logo">
+    </div>
+    <div class="sp-menu">
+      <i class="bi bi-list" id="open"></i>
+    </div>
+
+  </header>
+
+  <div class="overlay">
+    <i class="bi bi-x-lg" id="close"></i>
+    <nav>
+      <ul>
+        <li><i class="bi bi-house-fill"></i><a href="index.html"> HOME</a></li>
+        <li><i class="bi bi-cup-fill"></i><a href="cafe.html"> CAFE</a></li>
+        <li><i class="bi bi-book-fill"></i><a href="menu.html"> MENU</a></li>
+        <li><i class="bi bi-cart-fill"></i><a href="shop.html"> SHOP</a></li>
+        <li><i class="bi bi-megaphone-fill"></i><a href="blog.html"> BLOG</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!--ここから記入-->
+
+  <div class="container">
+    <div class="aside">
+      <div class="container-aside">
+        <div class="tweet">
+          <h3>店長のつぶやき</h3>
+          <ul>
+            <li><a href="#">苦味か渋みか</a></li>
+            <li><a href="#">コーヒー豆の保存法</a></li>
+            <li><a href="#">和菓子と楽しむ</a></li>
+            <li><a href="#">コーヒー豆を選ぶ</a></li>
+            <li><a href="#">気分にあわせて</a></li>
+            <li><a href="#">アイスコーヒーもどうぞ</a></li>
+            <li><a href="#">クリスマスの思い出</a></li>
+          </ul>
+        </div>
+
+        <div class="trivia">
+          <h3>コーヒーの豆知識</h3>
+          <dl>
+            <dt>コーヒー</dt>
+            <dd><a href="#">コーヒーの歴史</a></dd>
+            <dd><a href="#">コーヒーの入れ方</a></dd>
+            <dd><a href="#">豆を挽く</a></dd>
+            <dt>コーヒーグッズ</dt>
+            <dd><a href="#">ドリッパー</a></dd>
+            <dd><a href="#">ケトル</a></dd>
+            <dd><a href="#">布フィルター</a></dd>
+            <dt>カップソーサー</dt>
+            <dd><a href="#">マイセン</a></dd>
+            <dd><a href="#">デミタス</a></dd>
+            <dd><a href="#">タンブラー</a></dd>
+          </dl>
+        </div>
+
+        <div class="cafe-info">
+          <h3>カフェ情報</h3>
+          <ul>
+            <li>港区新橋 x-xx-x</li>
+            <li>新橋駅前ビルX号館1F</li>
+            <li>JR新橋駅から徒歩2分</li>
+            <li>電話 : 03-1234-5678</li>
+          </ul>
+        </div>
+
+        <div class="business-hours">
+          <h3>営業時間</h3>
+          <ul>
+            <li>平日:7時～23時</li>
+            <li>土曜日:7時～22時</li>
+            <li>日祝日:8時～21時</li>
+          </ul>
+        </div>
+
+        <div class="search">
+          <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+          <form method="get" action="#" class="search_container">
+            <input type="text" size="25" placeholder="SEARCH">
+            <input type="submit" value="&#xf002">
+          </form>
+          <p><small>サイト内の文章を検索できます。</small></p>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+    <div class="main">
+      <img id="changePic" src="img/top-image01.jpeg" alt="画像の切り替え">
+
+      <!--ここからお知らせ、記事コンテンツ-->
+
+
+      <main class="main-contents wrapper">
+
+        <div class="article-info">
+          <h2><i class="bi bi-info-circle-fill"></i>お知らせ</h2>
+        </div>
+
+        <div class="post-list">
+          <article class="post-item">
+            <a href="#"><img src="img/img-fruits.jpg" alt="" class="post-image"></a>
+            <header class="post-header">
+              <h2 class="post-title"><a href="#">店長のつぶやき更新しました。<br>～苦味か、渋みか～</a></h2>
+              <time class="post-date" datetime="2021-12-16">2021年12月16日</time>
+              <ul class="post-categories">
+                <li>BLOG</li>
+              </ul>
+            </header>
+          </article>
+
+          <article class="post-item">
+            <a href="#"><img src="img/img-leaf.jpg" alt="" class="post-image"></a>
+            <header class="post-header">
+              <h2 class="post-title"><a href="#">12月10日からのモーニングメニュー </a></h2>
+              <time class="post-date" datetime="2021-12-9">2021年12月9日</time>
+              <ul class="post-categories">
+                <li>NEW</li>
+              </ul>
+            </header>
+          </article>
+
+          <article class="post-item">
+            <a href="#"><img src="img/img-tent.jpg" alt="" class="post-image"></a>
+            <header class="post-header">
+              <h2 class="post-title"><a href="#">店長のつぶやき更新しました。<br>～コーヒー豆の保存法～</a></h2>
+              <time class="post-date" datetime="2021-12-6">2021年12月6日</time>
+              <ul class="post-categories">
+                <li>BLOG</li>
+              </ul>
+            </header>
+          </article>
+
+          <article class="post-item">
+            <a href="#"><img src="img/img-plant.jpg" alt="" class="post-image"></a>
+            <header class="post-header">
+              <h2 class="post-title"><a href="#">店長のつぶやき更新しました。<br>～クリスマスの思い出～</a></h2>
+              <time class="post-date" datetime="2021-12-5">2021年12月5日</time>
+              <ul class="post-categories">
+                <li>BLOG</li>
+              </ul>
+            </header>
+          </article>
+
+          <article class="post-item">
+            <a href="#"><img src="img/img-drink.jpg" alt="" class="post-image"></a>
+            <header class="post-header">
+              <h2 class="post-title"><a href="#">12月5日からのスペシャルブレンド </a></h2>
+              <time class="post-date" datetime="2021-12-4">2021年12月4日</time>
+              <ul class="post-categories">
+                <li>NEW</li>
+              </ul>
+            </header>
+          </article>
+
+          <article class="post-item">
+            <a href="#"><img src="img/img-yoga.jpg" alt="" class="post-image"></a>
+            <header class="post-header">
+              <h2 class="post-title"><a href="#">店長のつぶやき更新しました。<br>～アイスコーヒーもどうぞ～ </a></h2>
+              <time class="post-date" datetime="2021-12-2">2021年12月2日</time>
+              <ul class="post-categories">
+                <li>BLOG</li>
+              </ul>
+            </header>
+          </article>
+        </div>
+
+        <!--ここまでは、記事コンテンツ-->
+        <!--ここから下は、MENU画像-->
+        <div class="menu-info">
+          <h2><i class="bi bi-bell-fill"></i>MENU</h2>
+        </div>
+
+
+        <div id="open">
+          詳細を見る
+        </div>
+      
+        <div id="mask" class="hidden"></div>
+      
+        <section id="modal" class="hidden">
+          <p>こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。</p>
+          <div id="close">
+            閉じる
+          </div>
+        </section>
+
+
+    </div>
+
+
+  </div>
+
+
+  <!--ここまで記入-->
+
+
+  <footer>
+    <div class="wrapper">
+      <ul class="sns-area">
+        <li><a href="sitemap.html">SITEMAP</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><i class="bi bi-twitter"></i></li>
+        <li><i class="bi bi-facebook"></i></li>
+        <li><i class="bi bi-instagram"></i></li>
+      </ul>
+      <p><small>All rights reserved,Copyright &copy; CenterCafe 2022 </small></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
